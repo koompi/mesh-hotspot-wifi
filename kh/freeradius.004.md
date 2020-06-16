@@ -3,7 +3,7 @@ DEV: 001
 Title: Freeradius
 Author: Heng Hongsea
 Status: Active
-Create: 2020-06-15
+Create: 2020-06-16
 Update: NA
 version: 0.1.0
 ```
@@ -394,10 +394,6 @@ sudo systemctl stop freeradius
 sudo freeradius -X
 ```
 
-### Import sql
-
-[postgresql](/sql/)
-
 ### If you meet error with port already in use, fix it by following 
 
 ```console
@@ -494,3 +490,4 @@ insert into nas (nasname,shortname ,type,ports,secret,server,community,descripti
 
 
 ## Freeradius on client
+
