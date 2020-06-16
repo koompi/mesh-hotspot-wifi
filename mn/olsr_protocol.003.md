@@ -19,7 +19,7 @@ sudo apt install olsrd
 We will start config on two node (node1, node2)
 
 
-## Node 1
+## Node 1 master node
 
 ### Enable olsrd start on boot
 
