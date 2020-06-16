@@ -10,7 +10,7 @@ version: 0.1.0
 
 # Olsrd protocol
 
-## Require
+### Require
 
 ```
 sudo apt install olsrd
@@ -57,7 +57,8 @@ IpcConnect
      Host            192.168.20.1 
 }
 ```
-#Node 2
+## Node 2
+
 ### Enable olsrd start on boot
 
 uncomment the line in `/etc/default/olsrd`
