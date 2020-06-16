@@ -21,15 +21,4 @@ iface eth0 inet static
    address <ip address>
    netmask <netmask>
    gateway <gateway>
-   
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet static
-  address <ip address>
-  netmask <netmask>
-  gateway <gateway>
-  wireless-key <password>
-  wireless-channel 1
-  wireless-essid <SSID>
-  wireless-mode ad-hoc
 ```
