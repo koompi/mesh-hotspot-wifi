@@ -16,7 +16,7 @@ The graphic below shows how a wireless mesh network functions when sharings an i
 
 * MN001 [Static ip address](/mn/static_ip_address.001.md)
 * MN002 [Wireless Ad Hoc Network](/mn/wireless_ad_hoc.002.md)
-* MN003 [OLSR Protocol](/mn/olsr_protocol.003.md)
+* MN003 [OLSRD Protocol](/mn/olsr_protocol.003.md)
 
 ## Koompi Hotspot
 

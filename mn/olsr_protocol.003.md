@@ -1,6 +1,6 @@
 ```
 MN: 001
-Title: Olsrd protocol
+Title: OLSRD protocol
 Author: Heng Hongsea
 Status: Active
 Create: 2020-06-15
@@ -8,16 +8,15 @@ Update: NA
 version: 0.1.0
 ```
 
-# Olsrd protocol
+# OLSRD protocol
 
-### Require
+### Require package need to install
 
 ```
 sudo apt install olsrd
 ```
 
 We will start config on two node (node1, node2)
-
 
 ## Node 1 master node
 
