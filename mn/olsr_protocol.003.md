@@ -35,7 +35,7 @@ START_OLSRD=YES
 sudo systemctl restart networking
 ```
 
-### olsrd config
+### Olsrd config
 
 You need edit olsrd config on this path:  `/etc/olsrd/olsrd.conf`
 
@@ -73,7 +73,7 @@ START_OLSRD=YES
 sudo systemctl restart networking
 ```
 
-### olsrd config
+### Olsrd config
 
 You need edit olsrd config on this path:  `/etc/olsrd/olsrd.conf`
 
