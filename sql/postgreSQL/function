@@ -1,0 +1,58 @@
+### count all row in table student
+==============================================
+create or replace function total()
+returns integer as $total$ ## body of function
+declare
+total integer;
+begin # is where we write our SQL statments
+select count(*) into total from student;
+return total;
+end;
+$total$
+language plpgsql;
+
+
+### get all row 
+================================================
+create or replace function get_stu()
+returns table(
+    stuid integer,
+    stufullname text,
+    stuphone bigint,
+    stuclass text,
+    stustatus text
+) as $info$
+begin
+return query select * from student;
+end;
+$info$
+language plpgsql;
+
+
+===================================================
+CREATE OR REPLACE FUNCTION "greater"(integer, integer) RETURNS integer AS '
+    DECLARE
+        res INTEGER;
+        one INTEGER := 0;
+        two INTEGER := 0;
+    BEGIN
+        one = $1;
+        two = $2;
+        IF one IS NULL THEN
+            one = 0;
+        END IF;
+        IF two IS NULL THEN
+            two = 0;
+        END IF;
+        IF one > two THEN
+            res := one;
+        ELSE
+            res := two;
+        END IF;
+        RETURN res;
+    END;
+' LANGUAGE 'plpgsql';
+
+
+
+

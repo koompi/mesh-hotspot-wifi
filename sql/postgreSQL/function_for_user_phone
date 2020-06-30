@@ -1,0 +1,17 @@
+### Function update table userlogin_phonenumber
+=======================================================
+CREATE OR REPLACE FUNCTION insert_user_phonenumber(user_fullname text,user_gender text, user_phone text, user_password text,user_birthday date,user_address text, user_image BYTEA, user_firstlogin date,user_lastlogin date)
+    RETURNS void AS
+$BODY$
+BEGIN
+    INSERT INTO "userlogin_phonenumber" (fullname,gender,phonenumber,password,birthday,address,image,firstlogin,lastlogin)
+                VALUES (user_fullname,user_gender,user_phone,user_password,user_birthday,user_address,user_image,user_firstlogin,user_lastlogin);
+
+END
+$BODY$
+LANGUAGE plpgsql
+
+Example:
+select insert_user_email ('Heng Hongsea', 'M', '0934588539', '123', 'june-29-2020', 'Phnom penh', '2930478ewio', 'june-29-2020', 'june-29-2020');
+### Function update table userlogin_email
+=======================================================

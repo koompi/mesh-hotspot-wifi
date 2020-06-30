@@ -8,11 +8,13 @@ Update: NA
 version: 0.1.0
 ```
 
-# PostgreSQL
+# **PostgreSQL**
 
-#### Run posgres on docker
+## Node 1
 
-### Install package
+### Run posgres on docker
+
+Install package
 
 ```console
 sudo apt install docker
@@ -37,8 +39,8 @@ services:
     volumes:
       - ./dbs:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: Adminer
-      POSTGRES_PASSWORD: Adminer
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
     ports:
       - 5432:5432
 
@@ -56,3 +58,5 @@ Run docker compose
 ```console
 sudo docker-compose up -d
 ```
+
+And then you can open broswer port 8088

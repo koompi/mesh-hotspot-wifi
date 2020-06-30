@@ -8,6 +8,10 @@ Update: NA
 version: 0.1.0
 ```
 
+# **Coovachilli**
+
+## Node 1
+
 ### Install first dependency
 
 ```console
@@ -105,7 +109,12 @@ HS_TCP_PORTS="80 443"
 HS_ADMUSR=coovachillispot
 HS_ADMPWD=coovachillispot
 ```
+...
 
+```
+#uncomment this line for authentication with pap
+HS_RAD_PROTO="pap" # or mschapv2, chap
+```
 ### Networking routing
 We should not forget to enable packet forwarding and setup NAT (network address translation).
 

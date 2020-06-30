@@ -1,0 +1,35 @@
+### Function insert table userlogin_email
+=======================================================
+CREATE OR REPLACE FUNCTION insert_user_email(user_fullname text,user_gender text, user_email text, user_password text,user_birthday date,user_address text, user_image BYTEA, user_firstlogin date,user_lastlogin date)
+    RETURNS void AS
+$BODY$
+BEGIN
+    INSERT INTO "userlogin_email" (fullname,gender,email,password,birthday,address,image,firstlogin,lastlogin)
+                VALUES (user_fullname,user_gender,user_email,user_password,user_birthday,user_address,user_image,user_firstlogin,user_lastlogin);
+
+END
+$BODY$
+LANGUAGE plpgsql
+
+
+Example:
+select insert_user_email ('Heng Hongsea', 'M', 'hongsea119@gmail.com', '123', 'june-29-2020', 'Phnom penh', '2930478ewio', 'june-29-2020', 'june-29-2020');
+
+### Function update table userlogin_email
+=======================================================
+CREATE OR REPLACE FUNCTION update_user_email(user_fullname text,user_gender text, user_email text, user_password text,user_birthday date,user_address text, user_image BYTEA, user_firstlogin date,user_lastlogin date)
+    RETURNS void AS
+$BODY$
+BEGIN
+    update userlogin_email set fullname=user_fullname, gender=user_gender, email=user_email, password=user_password, birthday=user_birthday, address=user_address, image=user_image,firstlogin=user_firstlogin, lastlogin=user_lastlogin where userid=1;
+
+END
+$BODY$
+LANGUAGE plpgsql
+
+Example:
+select update_user_email ('Heng Hongseas', 'M', 'hongsea119@gmail.com', '123', 'june-29-2020', 'Phnom penh', '2930478ewio', 'june-29-2020', 'june-29-2020');
+
+
+### Function search table userlogin_email
+=======================================================

@@ -8,7 +8,7 @@ Update: NA
 version: 0.1.0
 ```
 
-# OLSRD protocol
+# **OLSRD protocol**
 
 ### Require package need to install
 
@@ -18,7 +18,7 @@ sudo apt install olsrd
 
 We will start config on two node (node1, node2)
 
-## Node 1 master node
+## Node Master
 
 ### Enable olsrd start on boot
 
@@ -50,7 +50,7 @@ We will start config on two node (node1, node2)
         Host            192.168.20.1 
     }
     ```
-## Node 2
+## Node 1
 
 ### Enable olsrd start on boot
 

@@ -14,16 +14,6 @@
  *       If you run an older version you need to change this to serial
  */
 
-CREATE TABLE profile (
-	id				bigserial PRIMARY KEY,
-	Firstname		text NOT NULL ,
-	Lastname		text NOT NULL ,
-	photo			
-	brithday
-	age
-	gender		
-)
-
 CREATE TABLE radacct (
 	RadAcctId		bigserial PRIMARY KEY,
 	AcctSessionId		text NOT NULL,
